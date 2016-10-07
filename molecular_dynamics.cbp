@@ -39,6 +39,7 @@
 		<Unit filename="box.hpp" />
 		<Unit filename="core.cpp" />
 		<Unit filename="particle.hpp" />
+		<Unit filename="periodic_box.hpp" />
 		<Unit filename="plotter.hpp" />
 		<Unit filename="vector3d.hpp" />
 		<Extensions>

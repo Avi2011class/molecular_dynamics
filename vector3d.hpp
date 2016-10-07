@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <functional>
 
 class vector3d
 {
@@ -66,6 +67,11 @@ public:
 	{
 	    os << std::fixed << std::setprecision(8) << "{" << ve.x << ", " << ve.y << ", " << ve.z << "}";
 	    return os;
+	}
+
+	friend bool operator == (vector3d & a, vector3d & b)
+	{
+		return (a.x == b.x) && (a.y == b.y) && (a.z == b.z);
 	}
 
 	inline double length_sqr()
