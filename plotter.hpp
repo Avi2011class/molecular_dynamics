@@ -1,6 +1,6 @@
 #ifndef PHPPINCLUDED
 #define PHPPINCLUDED
-
+/*
 #include <exception>
 #include <iostream>
 
@@ -68,6 +68,6 @@ void show_plot(std::vector< std::vector< double > > & data, std::vector< sf::Col
 		window.display();
 	}
 }
-
+*/
 
 #endif // PLOTTER_HPP_INCLUDED

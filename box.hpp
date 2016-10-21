@@ -1,15 +1,19 @@
 #ifndef BOX_HPP_INCLUDED
 #define BOX_HPP_INCLUDED
 
+#include <cmath>
+#include <vector>
+#include <functional>
+#include <regex>
+
 #include "particle.hpp"
 #include "vector3d.hpp"
-
-#define FULL_ENERGY_INFO
 
 class Box : public std::vector< Particle >
 {
 protected:
     double dt;
+	double themperature, default_themperature, delta_themperature;
 
 public:
     static constexpr inline double fast_pow(double x, int n)
@@ -23,6 +27,9 @@ public:
     }
 
     Box (double dt) : dt(dt) {}
+    Box (double dt, double default_themperature, double delta_themperature) :
+				dt(dt), default_themperature(default_themperature), delta_themperature(delta_themperature) {};
+
     virtual void clear_forces();
     virtual double calc_forces();
 	virtual void move();
@@ -30,13 +37,13 @@ public:
 	virtual void init_leapfrog();
 	virtual void dump();
 	virtual void clear_dublicates();
+	void themperature_balance();
 };
 
 void Box::clear_forces()
 {
-    for (Box::iterator it = begin(); it != end(); it++) {
-        (it->f).x = 0;	(it->f).y = 0;	(it->f).z = 0;
-    }
+    for (auto & particle: *this)
+		particle.f.x = 0, particle.f.y = 0, particle.f.z = 0;
 }
 double Box::calc_forces()
 {
@@ -48,26 +55,23 @@ double Box::calc_forces()
 			double dist2 = rr.length_sqr();
 			rr *= (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
 			(*this)[i].f -= rr; (*this)[j].f += rr;
-			#ifdef FULL_ENERGY_INFO
 			potential_energy += (1.0 / fast_pow(dist2, 6)) - (1.0 / fast_pow(dist2, 3));
-			#endif
 		}
 	return potential_energy;
 }
 inline void Box::move()
 {
-    for (Box::iterator it = begin(); it != end(); it++)
-		(*it).move(dt);
+	for (auto & particle: *this)
+		particle.move(dt);
 }
 double Box::calc_v()
 {
 	double kinetic_energy = 0;
-	for (Box::iterator it = begin(); it != end(); it++) {
-		(*it).calc_v(dt);
-		#ifdef FULL_ENERGY_INFO
-		kinetic_energy += (*it).v.length_sqr() * (*it).mass / 2;
-		#endif
+	for (auto & particle: *this) {
+		particle.calc_v(dt);
+		kinetic_energy += particle.v.length_sqr() * particle.mass / 2;
 	}
+	themperature = kinetic_energy / size(); //!TODO Boltsman constant
 	return kinetic_energy;
 }
 void Box::init_leapfrog()
@@ -89,8 +93,8 @@ void Box::init_leapfrog()
 void Box::dump()
 {
     std::cout << "Box:" << std::endl;
-    for (size_t i = 0; i < size(); i++)
-		std::cout << (*this)[i] << std::endl;
+    for (auto & particle: *this)
+		std::cout << particle << std::endl;
 	std::cout << std::endl;
 }
 
@@ -99,11 +103,22 @@ void Box::clear_dublicates()
 	for (size_t i = 0; i < size() - 1; i++)
 		for (size_t j = i + 1; j < size(); j++) {
 			vector3d rr = (*this)[i].r - (*this)[j].r;
-
 			if (rr.length_sqr() < 0.2) {
 				(*this)[j] = (*this)[size() - 1];
 				resize(size() - 1);
 			}
 		}
+}
+
+void Box::themperature_balance()
+{
+    if (themperature == 0) {
+		for (auto & particle: *this)
+			themperature += particle.v.length_sqr() * particle.mass / 2;
+		themperature /= size();
+	}
+    double lambda = sqrt(1 + delta_themperature * (default_themperature/themperature - 1));
+	for (auto & particle: *this)
+        particle.v *= lambda;
 }
 #endif // BOX_HPP_INCLUDED

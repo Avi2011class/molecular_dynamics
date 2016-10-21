@@ -2,7 +2,7 @@
 #include <thread>
 #include <ctime>
 #include <cstdlib>
-
+#include <fstream>
 
 #include "plotter.hpp"
 #include "box.hpp"
@@ -10,62 +10,56 @@
 
 void test()
 {
-	freopen("/tmp/md.log", "w", stdout);
+	std::fstream log;
+	std::ios::sync_with_stdio(false);
 
-    srand(time(0));
-    PeriodicBox B(20, 0.002);
+	log.open("~/oldhome/md2.log", std::ios::out);
+
+    double ro = 0.6;
+    //PeriodicBox B(10, 0.005, 1.3, 0.0001);
+    PeriodicBox B(9, 0.001, 1.3, 0.0001);
     //Box B(0.0005);
 
     vector3d location;
 
-/*
-
-    location = vector3d(0.8, 0, 0);
-    B.push_back(Particle(location));
-    location = vector3d(-0.8, 0, 0);
-    B.push_back(Particle(location));
-    location = vector3d(-1.8, 1, 0);
-    B.push_back(Particle(location, vector3d(0.2, 0, 0), 1));
-
-    location = vector3d(1.8, -1, 0);
-    B.push_back(Particle(location, vector3d(-0.2, 0, 0), 1));
-    location = vector3d(-0.2, -1.4, 0);
-    B.push_back(Particle(location));
-    location = vector3d(-1, 1, 0);
-    B.push_back(Particle(location));
-    location = vector3d(-1, -1, 0);
-    B.push_back(Particle(location));
-*/
-	for (int i = 0; i < 50; i++)
-	{
-		location = vector3d(rand() % 20 - 10, rand() % 20 - 10, rand() % 20 - 10);
-		B.push_back(Particle(location));
-	}
-	B.clear_dublicates();
+    int c = 0, clim = B.walls_size * B.walls_size * B.walls_size * ro;
+    for (double i = -B.walls_size / 2; i < B.walls_size / 2 && c < clim; i++)
+		for (double j = -B.walls_size / 2; j < B.walls_size / 2 && c < clim; j++)
+			for (double k = -B.walls_size / 2; k < B.walls_size / 2 && c < clim; k++)
+			{
+				location = vector3d(i, j, k);
+				B.push_back(Particle(location));
+				c++;
+			}
 
     B.clear_forces();
-    //B.dump();
     B.init_leapfrog();
-    //B.dump();
 
     double e1, e2;
-    std::vector< std::vector< double > > energy(1);
 
-    for (int i = 0; i < 200000; i++)
+	bool enable_thermostat = true;
+	#define STEPS 200000
+    for (int i = 0; i < STEPS; i++)
     {
-    	//B.dump();
         B.move();
         e1 = B.calc_forces();
         e2 = B.calc_v();
-        if (i % 100 == 0)
-        {
-            energy[0].push_back(e2);
-            //energy[1].push_back(e2);
-            //energy[2].push_back(e1 + e2);
-        }
-		//B.dump();
+        e1 /= B.size();
+        e2 /= B.size();
+
+        if (enable_thermostat)
+			B.themperature_balance();
+
+		if (i * 2 == STEPS)
+			enable_thermostat = false;
+
+		log << i << " " << e1 << " " << e2 << " " << e1 + e2 << std::endl;
+		log.flush();
+        if (i % 1000 == 0)
+			std::cout << i << std::endl;
+
     }
-    show_plot(energy, std::vector< sf::Color >({sf::Color::Red, sf::Color::Green, sf::Color::Blue}));
-    //*/
+
+    log.close();
 }
 

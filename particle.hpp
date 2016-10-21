@@ -40,10 +40,10 @@ public:
         vector3d rr = other.r - r;
         double dist2 = rr.length_sqr();
 
-        rr *= (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
+        rr *= 4 * (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
         f += rr;
         other.f -= rr;
-        return (1.0 / fast_pow(dist2, 6)) - (1.0 / fast_pow(dist2, 3));
+        return 4 * (1.0 / fast_pow(dist2, 6)) - (1.0 / fast_pow(dist2, 3));
     }
 
     inline void move(double dt)

@@ -51,6 +51,25 @@ public:
         x = other.x; y = other.y; z = other.z;
         return *this;
     }
+	inline vector3d & balance(double walls_size)
+	{
+		if ( x * 2 < -walls_size )
+			x += walls_size;
+		else if ( x * 2 > walls_size )
+			x -= walls_size;
+
+		if ( y * 2 < -walls_size )
+			y += walls_size;
+		else if ( y * 2 > walls_size )
+			y -= walls_size;
+
+		if ( z * 2 < -walls_size )
+			z += walls_size;
+		else if ( z * 2 > walls_size )
+			z -= walls_size;
+
+		return *this;
+	}
 
     friend vector3d operator * (vector3d & ve, double k)
     {
