@@ -1,12 +1,16 @@
 # depslib dependency file v1.0
-1474464031 source:/home/alexander/cproj/molecular_dynamics/core.cpp
+1477253375 source:/home/alexander/cproj/molecular_dynamics/core.cpp
 	<iostream>
-	<omp.h>
+	<fstream>
 	<ctime>
 	<cstdlib>
 	<vector>
+	<thread>
+	"box.hpp"
+	"periodic_box.hpp"
+	"plotter.hpp"
 
-1475778214 /home/alexander/cproj/molecular_dynamics/vector3d.hpp
+1477248969 /home/alexander/cproj/molecular_dynamics/vector3d.hpp
 	<iostream>
 	<iomanip>
 	<functional>
@@ -15,7 +19,7 @@
 	"vector3d.hpp"
 	<cmath>
 
-1476833279 source:/home/alexander/cproj/molecular_dynamics/__test.cpp
+1477250084 source:/home/alexander/cproj/molecular_dynamics/__test.cpp
 	<cmath>
 	<thread>
 	<ctime>
@@ -33,12 +37,25 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Color.hpp>
 
-1476833337 /home/alexander/cproj/molecular_dynamics/box.hpp
+1477253075 /home/alexander/cproj/molecular_dynamics/box.hpp
 	<cmath>
 	<vector>
+	<functional>
+	<regex>
+	<exception>
 	"particle.hpp"
 	"vector3d.hpp"
 
-1476812459 /home/alexander/cproj/molecular_dynamics/periodic_box.hpp
+1477250132 /home/alexander/cproj/molecular_dynamics/periodic_box.hpp
+	<cstdlib>
+	<ctime>
 	"box.hpp"
+
+1477252043 /home/alexander/cproj/molecular_dynamics/interface.hpp
+	<string>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<chrono>
+	<thread>
 

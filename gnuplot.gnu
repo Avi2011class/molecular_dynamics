@@ -7,6 +7,7 @@ set terminal png size 1200, 600
 set output 'plot.png'
 set xlabel 'step'
 set ylabel 'energy'
+set title sprintf("potential energy = %f, kinetic energy = %f", a, b)
 
 plot '~/oldhome/md2.log' using 1:2 title 'potential' with lines, \
 	'~/oldhome/md2.log' using 1:3 title 'kinetic' with lines, \

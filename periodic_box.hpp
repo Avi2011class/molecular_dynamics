@@ -1,6 +1,9 @@
 #ifndef PBH_INCLUDED
 #define PBH_INCLUDED
 
+#include <cstdlib>
+#include <ctime>
+
 #include "box.hpp"
 
 class PeriodicBox : public Box
@@ -17,6 +20,8 @@ public:
     virtual double calc_forces();
     virtual void move();
 	virtual void clear_dublicates();
+	virtual void generate_crystal(double ro);
+	virtual void generate_random_crystal(double ro, double correlation);
 };
 
 double PeriodicBox::calc_forces()
@@ -26,21 +31,7 @@ double PeriodicBox::calc_forces()
 	for (size_t i = 1; i < size(); i++)
 		for (size_t j = 0; j < i; j++) {
 			vector3d rr = (*this)[i].r - (*this)[j].r;
-
-			if (2 * rr.x > walls_size)
-				rr.x -= walls_size;
-			else if (2 * rr.x < -walls_size)
-				rr.x += walls_size;
-
-			if (2 * rr.y > walls_size)
-				rr.y -= walls_size;
-			else if (2 * rr.y < -walls_size)
-				rr.y += walls_size;
-
-			if (2 * rr.z > walls_size)
-				rr.z -= walls_size;
-			else if (2 * rr.z < -walls_size)
-				rr.z += walls_size;
+			rr.balance(walls_size);
 
 			double dist2 = rr.length_sqr();
 			rr *= 4 * (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
@@ -53,23 +44,9 @@ double PeriodicBox::calc_forces()
 
 inline void PeriodicBox::move()
 {
-    for (auto & particle: *this)
-	{
+    for (auto & particle: *this) {
 		particle.move(dt);
-		if ( particle.r.x * 2 < -walls_size )
-			particle.r.x += walls_size;
-		else if ( particle.r.x * 2 > walls_size )
-			particle.r.x -= walls_size;
-
-		if ( particle.r.y * 2 < -walls_size )
-			particle.r.y += walls_size;
-		else if ( particle.r.y * 2 > walls_size )
-			particle.r.y -= walls_size;
-
-		if ( particle.r.z * 2 < -walls_size )
-			particle.r.z += walls_size;
-		else if ( particle.r.z * 2 > walls_size )
-			particle.r.z -= walls_size;
+		particle.r.balance(walls_size);
 	}
 }
 
@@ -78,28 +55,45 @@ void PeriodicBox::clear_dublicates()
 	for (size_t i = 0; i < size() - 1; i++)
 		for (size_t j = i + 1; j < size(); j++) {
 			vector3d rr = (*this)[i].r - (*this)[j].r;
-
-			if (2 * rr.x > walls_size)
-				rr.x -= walls_size;
-			else if (2 * rr.x < -walls_size)
-				rr.x += walls_size;
-
-			if (2 * rr.y > walls_size)
-				rr.y -= walls_size;
-			else if (2 * rr.y < -walls_size)
-				rr.y += walls_size;
-
-			if (2 * rr.z > walls_size)
-				rr.z -= walls_size;
-			else if (2 * rr.z < -walls_size)
-				rr.z += walls_size;
-
-			if (rr.length_sqr() < 0.2) {
-				(*this)[j] = (*this)[size() - 1];
-				resize(size() - 1);
-			}
+			rr.balance(walls_size);
 		}
 }
+
+void PeriodicBox::generate_crystal(double ro)
+{
+	int count = walls_size * walls_size * walls_size * ro;
+	int cube = 1;
+	while (cube * cube * cube < count) cube++;
+    double dist = walls_size / cube;
+    (*this).clear();
+
+	vector3d location;
+	for (int i = 0; i < cube && count > 0; i++)
+		for (int j = 0; j < cube && count > 0; j++)
+			for (int k = 0; k < cube && count > 0; k++) {
+				location = vector3d(-walls_size / 2 + dist * i,
+									-walls_size / 2 + dist * j,
+									-walls_size / 2 + dist * k);
+				push_back(Particle(location));
+				count--;
+			}
+
+}
+
+void PeriodicBox::generate_random_crystal(double ro, double correlation)
+{
+	generate_crystal(ro);
+	srand(time(0));
+	std::function<double()> __rand = [correlation]() -> double
+						{ return (double)(rand() % 2001 - 1000) * correlation / 1000; };
+
+    for (auto particle: *this) {
+		particle.r.x += __rand();
+		particle.r.y += __rand();
+		particle.r.z += __rand();
+    }
+}
+
 
 
 #endif // PBH_INCLUDED

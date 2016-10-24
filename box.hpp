@@ -5,13 +5,14 @@
 #include <vector>
 #include <functional>
 #include <regex>
+#include <exception>
 
 #include "particle.hpp"
 #include "vector3d.hpp"
 
 class Box : public std::vector< Particle >
 {
-protected:
+public:
     double dt;
 	double themperature, default_themperature, delta_themperature;
 

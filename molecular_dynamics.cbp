@@ -35,7 +35,10 @@
 		<Linker>
 			<Add library="gomp" />
 		</Linker>
-		<Unit filename="__test.cpp" />
+		<Unit filename="__test.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="box.hpp" />
 		<Unit filename="core.cpp" />
 		<Unit filename="particle.hpp" />

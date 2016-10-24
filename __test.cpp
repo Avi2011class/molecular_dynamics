@@ -13,13 +13,13 @@ void test()
 	std::fstream log;
 	std::ios::sync_with_stdio(false);
 
-	log.open("~/oldhome/md2.log", std::ios::out);
+	log.open("/home/alexander/oldhome/md2.log", std::ios::out);
 
     double ro = 0.6;
     //PeriodicBox B(10, 0.005, 1.3, 0.0001);
-    PeriodicBox B(9, 0.001, 1.3, 0.0001);
+    PeriodicBox B(6, 0.001, 1.3, 0.0001);
     //Box B(0.0005);
-
+/*
     vector3d location;
 
     int c = 0, clim = B.walls_size * B.walls_size * B.walls_size * ro;
@@ -31,14 +31,15 @@ void test()
 				B.push_back(Particle(location));
 				c++;
 			}
-
+*/
+	B.generate_crystal(0.6);
     B.clear_forces();
     B.init_leapfrog();
 
     double e1, e2;
 
 	bool enable_thermostat = true;
-	#define STEPS 200000
+	#define STEPS 20000
     for (int i = 0; i < STEPS; i++)
     {
         B.move();

@@ -1,0 +1,1634 @@
+
+
+*******************************************************************************
+Sun Oct 23 22:16:11 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 271478            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24.4975
+rel. change during last iteration : -4.3507e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494974
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00245
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.21012         +/- 0.000495     (0.01176%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:16:11 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 307.929           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 24.4947
+rel. change during last iteration : -1.1569e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494946
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00244971
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.16836          +/- 0.0004949    (0.04236%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:51:18 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 280087            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 26.3048
+rel. change during last iteration : -1.3506e-16
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0512907
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00263074
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.29207         +/- 0.0005129    (0.01195%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:51:18 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 166.947           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 26.3042
+rel. change during last iteration : -5.34572e-08
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0512902
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00263068
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.11859          +/- 0.0005129    (0.04585%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:52:42 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 277179            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 28.8673
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.053731
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00288702
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.26451         +/- 0.0005373    (0.0126%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:52:43 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 306.238           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 32.5212
+rel. change during last iteration : -8.41489e-08
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0570302
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00325244
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.16544          +/- 0.0005703    (0.04893%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:53:36 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 271478            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24.4975
+rel. change during last iteration : -4.3507e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494974
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00245
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.21012         +/- 0.000495     (0.01176%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:53:36 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 307.929           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 24.4947
+rel. change during last iteration : -1.1569e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494946
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00244971
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.16836          +/- 0.0004949    (0.04236%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:54:20 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 205378            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 112.256
+rel. change during last iteration : -5.06373e-16
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.105956
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0112267
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -3.53062         +/- 0.00106      (0.03001%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:54:20 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 54555.4           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 112.226
+rel. change during last iteration : -4.85026e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.105942
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0112237
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 3.33331          +/- 0.001059     (0.03178%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:55:13 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 165323            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.652
+rel. change during last iteration : -6.43022e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.160212
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -3.06283         +/- 0.001602     (0.05231%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 22:55:13 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 182993            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.518
+rel. change during last iteration : -7.12229e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.16017
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256544
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 5.27476          +/- 0.001602     (0.03037%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:00:31 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 1472
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 27959.2           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 35.9094
+rel. change during last iteration : -1.46425e-14
+
+degrees of freedom    (FIT_NDF)                        : 1471
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.156242
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0244116
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -3.35541         +/- 0.004072     (0.1214%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:00:31 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 1473
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 11556.6           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 188.893
+rel. change during last iteration : -2.85882e-15
+
+degrees of freedom    (FIT_NDF)                        : 1472
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.358224
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.128324
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 3.77802          +/- 0.009334     (0.2471%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:01:48 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 165323            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.652
+rel. change during last iteration : -6.43022e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.160212
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -3.06283         +/- 0.001602     (0.05231%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:01:48 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 182993            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.518
+rel. change during last iteration : -7.12229e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.16017
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256544
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 5.27476          +/- 0.001602     (0.03037%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:02:37 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 165323            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.652
+rel. change during last iteration : -6.43022e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.160212
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -3.06283         +/- 0.001602     (0.05231%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:02:37 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 182993            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 256.518
+rel. change during last iteration : -7.12229e-06
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.16017
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0256544
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 5.27476          +/- 0.001602     (0.03037%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:03:26 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 271478            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 24.4975
+rel. change during last iteration : -4.3507e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494974
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00245
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.21012         +/- 0.000495     (0.01176%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:03:26 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 307.929           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 24.4947
+rel. change during last iteration : -1.1569e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0494946
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00244971
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.16836          +/- 0.0004949    (0.04236%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:05:22 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 271346            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 28.7797
+rel. change during last iteration : -2.34546e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0536494
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00287825
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.20882         +/- 0.0005365    (0.01275%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:05:22 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 654.609           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 28.7767
+rel. change during last iteration : -2.17435e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0536466
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00287796
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.25017          +/- 0.0005365    (0.04291%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:07:06 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 269036            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 26.7946
+rel. change during last iteration : -4.64068e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0517661
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00267972
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.18661         +/- 0.0005177    (0.01236%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:07:07 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 647.618           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 26.7956
+rel. change during last iteration : -2.31642e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0517671
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00267983
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.24916          +/- 0.0005177    (0.04144%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:08:05 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 266775            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 22.9398
+rel. change during last iteration : -6.19484e-16
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478979
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00229421
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.16481         +/- 0.000479     (0.0115%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:08:05 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 609.215           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 22.9373
+rel. change during last iteration : -2.55549e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478953
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00229396
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.24213          +/- 0.000479     (0.03856%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:08:11 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 266775            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 22.9398
+rel. change during last iteration : -6.19484e-16
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478979
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00229421
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.16481         +/- 0.000479     (0.0115%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:08:11 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 609.215           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 22.9373
+rel. change during last iteration : -2.55549e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478953
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00229396
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.24213          +/- 0.000479     (0.03856%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:09:09 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 271771            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 31.4506
+rel. change during last iteration : -4.29255e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0560836
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00314537
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.21287         +/- 0.0005608    (0.01331%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:09:09 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 564.78            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 31.4502
+rel. change during last iteration : -1.69545e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0560832
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00314533
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.23094          +/- 0.0005608    (0.04556%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:10:54 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 269036            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 26.7946
+rel. change during last iteration : -4.64068e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0517661
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00267972
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.18661         +/- 0.0005177    (0.01236%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:10:54 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 647.618           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 26.7956
+rel. change during last iteration : -2.31642e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0517671
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00267983
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.24916          +/- 0.0005177    (0.04144%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:11:39 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 265613            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 25.1044
+rel. change during last iteration : -1.83973e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0501068
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0025107
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.15352         +/- 0.0005011    (0.01206%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:11:39 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 766.574           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 25.106
+rel. change during last iteration : -2.95275e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0501084
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00251086
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.2723           +/- 0.0005011    (0.03938%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:12:12 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 267531            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 35.8644
+rel. change during last iteration : -3.96239e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0598899
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0035868
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.172           +/- 0.0005989    (0.01436%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:12:12 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1126.56           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 35.8637
+rel. change during last iteration : -3.04062e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0598893
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00358672
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.33026          +/- 0.0005989    (0.04502%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:12:46 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:2
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 267867            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+a               = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 39.7373
+rel. change during last iteration : -2.68215e-15
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0630407
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00397412
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -4.17521         +/- 0.0006304    (0.0151%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
+
+
+*******************************************************************************
+Sun Oct 23 23:12:46 2016
+
+
+FIT:    data read from '<python3 split.py' using 1:3
+        format = x:z
+        #datapoints = 10000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 864.464           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1
+
+initial set of free parameter values
+
+b               = 1
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 39.7357
+rel. change during last iteration : -2.07512e-07
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0630394
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00397397
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 1.28718          +/- 0.0006304    (0.04897%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
