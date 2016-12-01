@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <vector>
 #include <thread>
+#include <iomanip>
 
 #include "box.hpp"
 #include "periodic_box.hpp"
@@ -57,7 +58,8 @@ int main(void)
         ps = step * 100 / steps;
         if (ps != ps_old || step == 0)
 		{
-			std::cout << "\rProgress: " << ps << "%";
+			std::cout << "\rProgress: " << ps << "%" <<  ", potential energy = " 
+				<< std::setprecision(3) << std::setw(6) << potential_energy << ", kinetic energy = " << std::setprecision(3) << std::setw(6) << kinetic_energy;
 			std::cout.flush();
 			ps_old = ps;
 		}
