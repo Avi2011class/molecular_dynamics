@@ -28,26 +28,50 @@ double PeriodicBox::calc_forces()
 {
 	clear_forces();
 	double potential_energy = 0;
+	#if defined(PARALLEL)
+	#pragma omp parallel for reduction(+:potential_energy) schedule(dynamic, 20)
+	for (size_t i = 0; i < size(); i++)
+		for (size_t j = 0; j < size(); j++) {
+			if (i == j)
+				continue;
+	#else
 	for (size_t i = 1; i < size(); i++)
 		for (size_t j = 0; j < i; j++) {
+	#endif
 			vector3d rr = (*this)[i].r - (*this)[j].r;
 			rr.balance(walls_size);
 
 			double dist2 = rr.length_sqr();
-			rr *= 4 * (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
-			(*this)[i].f -= rr; (*this)[j].f += rr;
+			if (dist2 >= 9)
+				continue;
 
+			rr *= 4 * (6.0 / fast_pow(dist2, 4) - 12.0 / fast_pow(dist2, 7));
+			#if defined(PARALLEL)
+			(*this)[i].f -= rr;
+			if (i < j)
+				potential_energy += 4 * ((1.0 / fast_pow(dist2, 6)) - (1.0 / fast_pow(dist2, 3)));
+			#else
+			(*this)[i].f -= rr; (*this)[j].f += rr;
 			potential_energy += 4 * ((1.0 / fast_pow(dist2, 6)) - (1.0 / fast_pow(dist2, 3)));
+			#endif
 		}
 	return potential_energy;
 }
 
 inline void PeriodicBox::move()
 {
-    for (auto & particle: *this) {
+	#if !defined(PARALLEL)
+	for (auto & particle: *this) {
 		particle.move(dt);
 		particle.r.balance(walls_size);
 	}
+	#else
+	#pragma omp parallel for schedule(static)
+	for (size_t i = 0; i < size(); i++) {
+		(*this)[i].move(dt);
+        (*this)[i].r.balance(walls_size);
+	}
+	#endif
 }
 
 void PeriodicBox::clear_dublicates()

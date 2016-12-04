@@ -43,9 +43,16 @@ public:
 
 void Box::clear_forces()
 {
+	#if !(defined(PARALLEL))
     for (auto & particle: *this)
 		particle.f.x = 0, particle.f.y = 0, particle.f.z = 0;
+	#else
+	#pragma omp parallel for schedule(static)
+	for (size_t i = 0; i < size(); i++)
+		(*this)[i].f.x = 0, (*this)[i].f.y = 0, (*this)[i].f.z = 0;
+	#endif
 }
+
 double Box::calc_forces()
 {
 	clear_forces();
@@ -68,10 +75,20 @@ inline void Box::move()
 double Box::calc_v()
 {
 	double kinetic_energy = 0;
+
+	#if !defined(PARALLEL)
 	for (auto & particle: *this) {
 		particle.calc_v(dt);
 		kinetic_energy += particle.v.length_sqr() * particle.mass / 2;
 	}
+	#else
+	#pragma omp parallel for schedule(static) reduction(+: kinetic_energy)
+	for (size_t i = 0; i < size(); i++) {
+		(*this)[i].calc_v(dt);
+		kinetic_energy += (*this)[i].v.length_sqr() * (*this)[i].mass / 2;
+	}
+	#endif
+
 	themperature = kinetic_energy / size(); //!TODO Boltsman constant
 	return kinetic_energy;
 }
